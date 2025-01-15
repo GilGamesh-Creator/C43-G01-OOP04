@@ -154,7 +154,7 @@ Explanation of override vs new:
             return Hours.GetHashCode() ^ Minutes.GetHashCode() ^ Seconds.GetHashCode();
         }
 
-        // Operator overloading examples (add more as needed)
+       
         public static Duration operator +(Duration a, Duration b)
         {
             int totalSeconds = a.ToSeconds() + b.ToSeconds();
@@ -166,7 +166,6 @@ Explanation of override vs new:
             return new Duration(a.ToSeconds() + seconds);
         }
 
-        // ... (Implement other operators similarly)
 
         private int ToSeconds()
         {
